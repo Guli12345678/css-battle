@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #293462;
+    border: 1px solid salmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    width: 350px;
+    height: 350px;
+    background-color: #FFF1C1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.mountain {
+    transition: 1s all;
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    width: 60%;
+    height: 60%;
+    rotate: 40deg;
+    background-color: #FE5F55;
+}
+
+.mountain.second {
+    left: 0;
+}
+.circle:hover .mountain.second{
+    bottom: -40%;
+}
+
+.circle:hover .mountain{
+    bottom: -10%;
+}
